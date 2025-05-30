@@ -1,9 +1,14 @@
-This project is a simple scraper application written in Go that fetches product data from an e-commerce webpage and processes it. The HTML content of the page is handled using the net/http and golang.org/x/net/html packages.
+# HtmlNodeParsing-Go
 
-The goal is to extract from each <li> element the product's:
+Extracting HTML format from a web page is a modular Go application that parses the product.
 
-Title (from the <h2> tag)
+## 📌Project Description
 
-Image URL (from the <img src=".." /> tag)
+This project is a simple scraper application that uses the `Go` language to scrape the product from an e-commerce page. The HTML data on the page is processed with the `net/http` and `golang.org/x/net/html` packages.
 
-and return it as a structured object.
+The goal is to extract the product within its `<li>` tag:
+
+- Title (`<h2>`)
+- Image URL (`<img src="..." />`)
+
+and return it as an object.
